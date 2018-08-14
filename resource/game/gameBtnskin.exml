@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameBtnskin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" states="up,down" >
+    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0xa99785" fillColor.down="0x8f7a65"
+            ellipseWidth="15"  enabled.up="true" enabled.down="true" fillColor.up="0xe2b588"/>
+            
+    <e:Label id="labelDisplay" top="12" bottom="12" left="12" right="12" size="18" textColor="0xffffff"
+             verticalAlign="middle" textAlign="center" text="2048" fontFamily="黑体" />
+</e:Skin>

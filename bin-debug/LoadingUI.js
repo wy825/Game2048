@@ -44,11 +44,17 @@ var LoadingUI = (function (_super) {
         return _this;
     }
     LoadingUI.prototype.createView = function () {
+        var bg = new egret.Shape();
+        bg.graphics.beginFill(0xB8AF9E, 1);
+        bg.graphics.drawRect(0, 0, this.$getWidth(), this.$getHeight());
+        bg.graphics.endFill();
+        this.addChild(bg);
         this.textField = new egret.TextField();
         this.addChild(this.textField);
         this.textField.y = 300;
         this.textField.width = 480;
         this.textField.height = 100;
+        this.textField.textColor = 0xF2B179;
         this.textField.textAlign = "center";
     };
     LoadingUI.prototype.onProgress = function (current, total) {
